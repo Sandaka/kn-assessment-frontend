@@ -39,6 +39,7 @@
             <th scope="col">#</th>
             <th scope="col">Avatar</th>
             <th scope="col">Name</th>
+            <th scope="col">Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -47,6 +48,7 @@
             <td><img [src]="user.url" width="42" height="42" class="rounded-circle" [alt]="user.name + ' \'s photo'">
             </td>
             <td>{{ user.name }}</td>
+            <td><button style="width: 50px; height: 30px; color: white" class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i>Edit</button></td>
           </tr>
         </tbody>
       </table>
